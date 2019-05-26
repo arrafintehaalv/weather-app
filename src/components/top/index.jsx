@@ -62,14 +62,30 @@ export default class TopSection extends React.Component {
                   data-placement={placement}
                 >
                   <div className="form-container">
-                    <label htmlFor="location-name">Location Name</label>
+                    {/* For the cities of Bangladesh*/}
+                    <select onChange={this.onLocationNameChange.bind(this)}>
+                      <option value="" selected />
+                      <option value="Dhaka">Dhaka</option>
+                      <option value="Rajshahi">Rajshahi</option>
+                      <option value="Barisal">Barisal</option>
+                      <option value="Comilla">Comilla</option>
+                      <option value="Mymensingh">Mymensingh</option>
+                      <option value="Chittagong">Chittagong</option>
+                      <option value="Khulna">Khulna</option>
+                      <option value="Gazipur">Gazipur</option>
+                      <option value="Narayanganj">Narayanganj</option>
+                      <option value="Rangpur">Rangpur</option>
+                    </select>
+                    <br />
 
-                    <input
+                    {/* For All the cities */}
+                    {/* <label htmlFor="location-name">Location Name</label> */}
+                    {/* <input
                       id="location-name"
                       type="text"
                       placeholder="City Name"
                       onChange={this.onLocationNameChange.bind(this)}
-                    />
+                    /> */}
                     <button
                       className="btn btn-select-location"
                       onClick={this.onSelectCity.bind(this)}
