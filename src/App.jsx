@@ -84,7 +84,7 @@ class App extends Component {
             <div className="bottom-section">
               <BottomSection />
             </div>
-            <div className="footer">All Rights Reserved</div>
+            <div className="footer bottom">All Rights Reserved</div>
           </div>
         </div>
       </div>
