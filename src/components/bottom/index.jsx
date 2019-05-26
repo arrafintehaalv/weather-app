@@ -8,6 +8,6 @@ export default class TopSection extends React.Component {
   }
 
   render() {
-    return <div className="bottom-container">BOTTOM SECTION</div>;
+    return <div className="bottom-container" />;
   }
 }

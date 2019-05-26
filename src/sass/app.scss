@@ -16,10 +16,14 @@ body,
   justify-content: center;
   align-items: center;
 }
-
+.full-container {
+  background: url("../resources/images/talent.png");
+  background-size: cover;
+  height: 100%;
+}
 .main-container {
-  min-width: 600px;
-  height: 300px;
+  width: 600px;
+  height: 500px;
   display: flex;
   flex-direction: column;
   border: 1px solid #999;
@@ -38,8 +42,30 @@ body,
   border: 1px solid #ddd;
   margin: 15px 0;
   align-self: center;
+  cursor: pointer;
 
   &:focus {
     outline: none;
+  }
+}
+
+.popup-container {
+  position: absolute;
+  will-change: transform;
+  top: -52px;
+  left: -29px;
+  transform: translate3d(487px, 177px, 0px);
+  width: 12em;
+  height: 5em;
+  display: flex;
+  border-radius: 4px;
+  background-color: #fff;
+  font-size: 20px;
+}
+
+.form-container {
+  input {
+    border-radius: 2px;
+    border: 1px solid rgba(15, 15, 15, 0.2);
   }
 }
